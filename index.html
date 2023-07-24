@@ -12,10 +12,13 @@
 <body>
     <div id="mainContainer">
         <h2 id="mainHeader">Weather app</h2>
-        <label>Select your city:
-            <input type="text" placeholder="Eilat"/>
+        <label>
+            Search:
             <i class="material-icons">search</i>
+            <input type="text" placeholder="Eilat"/>
+            <div id="autocomplete-list"></div>
         </label>
+        
         <BR>
         <button type="button" id="sbtn">SEARCH</button>
         <div id="resContainer">
@@ -25,7 +28,8 @@
                 <h5>weather for the next 4 days</h5>
                 <div id="days" class="revial">
                     <div class="d">day
-                        <p>30 degree</p>
+                        <div id="icon">
+                        </div>
                         <div class="Wicon">
                         </div>
                     </div>
@@ -34,13 +38,14 @@
                 </div>
             </div>
             <div class="innerRES">
-                <div id="cityIMG">IMG CITY HERE
+                <div id="cityIMG">Search your city and get start!
                     
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module"></script>
+    <script src="./js/citys.js" type="module"></script>
 </body>
 </html>
